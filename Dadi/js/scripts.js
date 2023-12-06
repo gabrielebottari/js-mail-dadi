@@ -5,21 +5,22 @@ Stabilire il vincitore, in base a chi fa il punteggio più alto.
 */
 
 // Generare un numero random da 1 a 6
-const diceThrow = Math.floor(Math.random() * 6) + 1;
+const diceThrowPlayer = Math.floor(Math.random() * 6) + 1;
+const diceThrowComputer = Math.floor(Math.random() * 6) + 1;
 
 // Lancio dei dadi per il giocatore e il computer
-const player = diceThrow;
-const computer = diceThrow;
+const player = diceThrowPlayer;
+const computer = diceThrowComputer;
 
 // Stampa i risultati
-console.log("Il giocatore ha ottenuto un punteggio di:", player);
-console.log("Il computer ha ottenuto un punteggio di:", computer);
+console.log("Player's result:", player);
+console.log("CPU's result:", computer);
 
 // Stabilire il vincitore
 if (player > computer) {
-    console.log("Il giocatore vince!");
+    console.log("Player win!");
 } else if (player < computer) {
-    console.log("Il computer vince!");
+    console.log("CPU win!");
 } else {
-    console.log("È un pareggio!");
+    console.log("Draw!");
 }
