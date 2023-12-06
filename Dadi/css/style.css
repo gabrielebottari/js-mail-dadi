@@ -10,3 +10,28 @@
 html {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.container-fluid{
+    height: 100vh;
+}
+
+#result {
+    font-size: 10em;
+    text-align: center;
+    padding-top: 50px;
+    margin-top: 100px;
+}
+
+#result.player {
+    color: gold;
+}
+
+#result.cpu {
+    color: red;
+}
+
+#result.draw {
+    color: blue;
+}
+
+
