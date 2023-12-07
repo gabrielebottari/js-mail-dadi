@@ -18,7 +18,7 @@ myButton.addEventListener('click', function() {
 
     // Lancio dei dadi per il giocatore e il computer
     const player = diceThrowPlayer;
-    const computer = diceThrowComputer;
+    const computer = diceThrowComputer; 
 
     // Stampa i risultati
     console.log("Player's result:", player);
@@ -50,6 +50,9 @@ myButton.addEventListener('click', function() {
         //result.classList.add("text-center", "m-2", "fs-3", "text-info");
         //result.append("Draw!");
     }
+
+    document.getElementById("playgroundPlayer").innerText = `Player's result ${diceThrowPlayer}`;
+    document.getElementById("playgroundCPU").innerText = `CPU's result ${diceThrowComputer}`;
 
     // Inserimento elemento nel container
     // playground.append(result);

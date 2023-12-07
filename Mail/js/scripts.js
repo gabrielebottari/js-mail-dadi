@@ -16,6 +16,7 @@ myButton.addEventListener('click', function() {
     //const userMail = prompt("Inserisci la tua email:");
     const userMail = document.getElementById('mail').value;
 
+    
     // Controlla l'email è nella lista di chi può accedere
     if (mailList.includes(userMail)) {
         console.log("Benvenuto!");
@@ -24,5 +25,5 @@ myButton.addEventListener('click', function() {
         console.log("La tua email non è autorizzata.");
         document.getElementById('result').innerHTML = ("La tua email non è autorizzata!");
     }
+    
 })
-
